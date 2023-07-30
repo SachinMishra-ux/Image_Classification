@@ -63,7 +63,7 @@ def download_images(query, delay, no_of_images):
     except Exception as e:
         return e
 
-download_images('modi', 2,5)
+download_images('modi', 2,100)
 
 
 
