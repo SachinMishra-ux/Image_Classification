@@ -27,3 +27,6 @@ python filename.py
 ```
 pip install -r requirements.txt
 ```
+
+## fo checking all the packages:
+`pip list`
