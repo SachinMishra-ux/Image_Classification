@@ -36,6 +36,7 @@ def predict(data: Data):
    data_dict= data.dict()
    return util.classify_image(data_dict['image_base64_data'])
 
+
 if __name__ == '__main__':
-    print("Starting Python Flask Server For Image Classification")
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    print("Starting Python FASTAPI Server For Image Classification")
+    uvicorn.run('main:app', port=8000, reload=True)

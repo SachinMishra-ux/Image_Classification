@@ -30,3 +30,7 @@ pip install -r requirements.txt
 
 ## fo checking all the packages:
 `pip list`
+
+## To run frontend/streamlit 
+
+`streamlit run sach.py`

@@ -6,7 +6,7 @@ import cv2
 from wavelet import w2d
 import sklearn
 from PIL import Image
-from io import StringIO,BytesIO
+from io import BytesIO
 
 
 print("loading saved artifacts...start")
@@ -84,8 +84,3 @@ def get_cropped_image_if_2_eyes(image_path, image_base64_data):
                 cropped_faces.append(roi_color)
     return cropped_faces
 
-
-
-def get_b64_test_image_for_virat():
-    with open('./server/b64.txt') as f:
-        return f.read()
