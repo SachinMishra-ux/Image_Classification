@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 import json
-from io import StringIO,BytesIO
+from io import BytesIO
 from PIL import Image
 import base64
 import ast
