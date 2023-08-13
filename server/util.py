@@ -10,11 +10,11 @@ from io import BytesIO
 
 
 print("loading saved artifacts...start")
-with open("./server/artifacts/class_dictionary.json", "r") as f:
+with open("./artifacts/class_dictionary.json", "r") as f:
     class_name_to_number = json.load(f)
     class_number_to_name = {v:k for k,v in class_name_to_number.items()}
 
-with open('./server/artifacts/saved_model.pkl', 'rb') as f:
+with open('./artifacts/saved_model.pkl', 'rb') as f:
     model = joblib.load(f)
 print("loading saved artifacts...done")
 

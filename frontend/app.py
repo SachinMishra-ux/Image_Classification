@@ -52,7 +52,7 @@ def run():
 
     
     if st.button("Predict"):
-        response = requests.post("http://0.0.0.0:8000/predict", json= data)
+        response = requests.post("http://127.0.0.1:8000/predict", json= data)
         data= (list(response))
         st.write(data)
         print(data)
