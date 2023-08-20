@@ -20,7 +20,7 @@ def update_probability_scores(prediction_data):
 
 # Create the table
 def create_table(prediction_data):
-    player_names = ['maria_sharapova', 'virat_kohli', 'lionel_messi', 'serena_williams', 'roger_federer']
+    player_names = ['barack obama', 'narendra modi', 'rahul gandhi', 'rishi sunak', 'vladimir putin']
     probability_scores = update_probability_scores(prediction_data)
 
     data = {'PlayerName': player_names, 'Probability Score': probability_scores}
@@ -55,7 +55,6 @@ def run():
         response = requests.post("http://127.0.0.1:8000/predict", json= data)
         data= (list(response))
         st.write(data)
-        print(data)
         # Decode bytes and get the first element (desired data)
         desired_data1 = data[0].decode("utf-8")
         desired_data2 = data[1].decode("utf-8")
